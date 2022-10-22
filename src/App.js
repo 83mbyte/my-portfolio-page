@@ -1,4 +1,5 @@
-import React, { useEffect, useState } from "react";
+import React, { Fragment, useEffect, useState } from "react";
+import Loading from "./LoadingScreen/LoadingScreen";
 
 import AboutUs from "./Sections/AboutUs/AboutUs";
 import Contact from "./Sections/Contact/Contact";
@@ -45,8 +46,11 @@ function App() {
   return (
 
     !stateData
-      ? 'Loading data. Please  wait..'
-      : < >
+      ? <Fragment>
+        <Loading />
+
+      </Fragment>
+      : <Fragment >
         <nav>
           <WrapperFixed>
             <HeaderNav navyBtns={stateData.navigation} />
@@ -70,7 +74,7 @@ function App() {
           <Footer data={stateData.sections.footer} />
           <Copyright />
         </footer>
-      </ >
+      </Fragment >
 
 
 
