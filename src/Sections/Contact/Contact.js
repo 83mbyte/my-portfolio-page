@@ -6,7 +6,7 @@ import ContactItem from './ContactItem';
 
 import styles from './ContactStyle.module.css';
 
-const Contact = () => {
+const Contact = ({ data }) => {
     const submitHandler = (event) => {
         event.preventDefault();
         const { name, email, subj, message } = event.target.elements;
@@ -23,9 +23,9 @@ const Contact = () => {
         <Section scrollId={'contact'}>
             <HeadingSection title={'Get in Touch'} subtitle={'WE LOVE PRETTY MUCH TO HEAR FROM YOU'} />
             <div className={styles.contactItemsContainer}>
-                <ContactItem icon={'phone'} text={'+000 123 456 xXx'} />
-                <ContactItem icon={'email'} text={'email@example.com'} />
-                <ContactItem icon={'location'} text={'Somewhere, Earth.'} />
+                <ContactItem icon={'phone'} text={data.phone} />
+                <ContactItem icon={'email'} text={data.email} />
+                <ContactItem icon={'location'} text={data.address} />
             </div>
             <form onSubmit={submitHandler}>
                 <div className={styles.formContainer}>

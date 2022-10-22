@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import styles from './HeaderNavStyle.module.css';
 import NavButtons from './NavButtons';
 
-const HeaderNav = () => {
+const HeaderNav = ({ navyBtns }) => {
 
     const [openMenu, setOpenMenu] = useState(false);
 
@@ -16,7 +16,7 @@ const HeaderNav = () => {
                     <a href={'#'} className={styles.brand}><span className='bold'>83mbyte</span></a>
                 </div>
                 <div className={styles.navyContainer}>
-                    <NavButtons />
+                    <NavButtons navyBtns={navyBtns} />
 
                     <div className={styles.burgerMenu} onClick={handleMenu}>
                         <div className={styles.burgerIcon}></div>
@@ -25,7 +25,7 @@ const HeaderNav = () => {
                 </div>
             </div>
             <div className={styles.menuExpanded} style={{ display: `${openMenu ? 'flex' : 'none'}` }}>
-                <NavButtons action={handleMenu} />
+                <NavButtons navyBtns={navyBtns} action={handleMenu} />
             </div>
         </>
     );
