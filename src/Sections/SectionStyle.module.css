@@ -1,0 +1,25 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 100px 15px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 15px;
+  background-color: transparent;
+}
+
+/* .white {
+  composes: container;
+  background-color: #fff;
+}
+.gray {
+  composes: container;
+  background-color: #f9f9f9;
+} */
+
+@media (max-width: 600px) {
+  .container {
+    padding: 15px 15px;
+  }
+}

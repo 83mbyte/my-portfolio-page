@@ -1,0 +1,44 @@
+.container {
+  background: transparent;
+  border-radius: 0;
+  border: 3px solid #404040;
+  color: #404040;
+  font-weight: bold;
+
+  /* padding: 16px 42px; */
+  /* margin-top: 40px; */
+  transition: all 0.4s ease-in-out;
+  width: 200px;
+  margin: 40px auto 0 auto;
+}
+
+.btn {
+  display: inline-block;
+  margin: 10px 6px;
+  /* margin-bottom: 0; */
+  font-size: 14px;
+  color: #404040;
+  background-color: transparent;
+  line-height: 1.42857143;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  font-weight: 700;
+}
+.container:hover {
+  background: #404040;
+}
+
+.container:hover .btn {
+  color: #fff;
+}

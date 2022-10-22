@@ -1,0 +1,55 @@
+.homeWrapper {
+  background: url("../../assets/images/home-bg.jpg") no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 90vh;
+  text-align: center;
+}
+
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.content {
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.homeWrapper hr {
+  border: 2px solid #404040;
+  width: 100px;
+}
+
+.homeWrapper h3 {
+  letter-spacing: 2px;
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}

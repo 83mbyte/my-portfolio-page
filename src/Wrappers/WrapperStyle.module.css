@@ -1,0 +1,27 @@
+.container,
+.containerFixed,
+.containerFixedScroll {
+  width: 100%;
+  padding: 10px 15px;
+  align-items: center;
+  transition: all 0.5s ease-in-out;
+}
+.containerFixed,
+.containerFixedScroll {
+  position: fixed;
+  z-index: 1001;
+  border-bottom-width: 1px;
+}
+
+.containerFixedScroll {
+  background-color: #fff;
+  border-bottom: 1px solid #eeeeee;
+}
+
+.contentWrapper {
+  background-color: transparent;
+  width: 100%;
+  max-width: 1170px;
+  margin: 0 auto;
+  border: 0px solid green;
+}

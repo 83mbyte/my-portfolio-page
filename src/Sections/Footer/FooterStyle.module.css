@@ -1,0 +1,94 @@
+.container {
+  background: url("../../assets/images/footer-bg.jpg") no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.socialContainer {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: transparent;
+}
+.iconsRow {
+  background-color: transparent;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  column-gap: 10px;
+}
+
+.iconItem {
+  border-radius: 50%;
+  color: #303030;
+  font-size: 32px;
+  /* background-color: #303030; */
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.4s ease-in-out;
+  /* margin-top: 20px; */
+  margin-right: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.iconItem:hover {
+  cursor: pointer;
+  background-color: #ffd321;
+}
+
+.icon {
+  width: 34px;
+  height: 34px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background-color: #000;
+  mask-repeat: no-repeat;
+}
+.github {
+  composes: icon;
+  mask: url("../../assets/images/github.svg") no-repeat center;
+}
+.twitter {
+  composes: icon;
+  mask: url("../../assets/images/twitter.svg") no-repeat center;
+}
+.frontendmentor {
+  composes: icon;
+  mask: url("../../assets/images/frontendmentor.svg") no-repeat center;
+}
+
+@media (max-width: 600px) {
+  .iconItem {
+    width: 44px;
+    height: 44px;
+  }
+  .icon {
+    width: 34px;
+    height: 34px;
+  }
+}
+
+@media (max-width: 320px) {
+  .iconItem {
+    width: 34px;
+    height: 34px;
+  }
+  .icon {
+    width: 24px;
+    height: 24px;
+  }
+}
