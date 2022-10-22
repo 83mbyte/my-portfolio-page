@@ -13,7 +13,7 @@ const HeaderNav = ({ navyBtns }) => {
         <>
             <div className={styles.container}>
                 <div className={styles.logoContainer}>
-                    <a href={'#'} className={styles.brand}><span className='bold'>83mbyte</span></a>
+                    <a href={'/'} className={styles.brand}><span className='bold'>83mbyte</span></a>
                 </div>
                 <div className={styles.navyContainer}>
                     <NavButtons navyBtns={navyBtns} />
