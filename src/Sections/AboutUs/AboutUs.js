@@ -25,7 +25,7 @@ const AboutUs = ({ data }) => {
     // ]
     return (
         <Section bgColor={'white'} scrollId={'about'}>
-            <HeadingSection title={'About Us'} subtitle={'WE ARE TALANTED DESIGNERS & DEVELOPERS'} />
+            <HeadingSection title={'About'} subtitle={'Our Process. Our Focus'} />
             <div className={styles.aboutUsContainer}>
 
                 {

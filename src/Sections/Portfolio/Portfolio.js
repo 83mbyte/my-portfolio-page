@@ -29,7 +29,7 @@ const Portfolio = () => {
     }
     return (
         <Section scrollId={'portfolio'}>
-            <HeadingSection title={'portfolio'} subtitle={'MOBILE, WEB AND BRAND IDENTITY'} />
+            <HeadingSection title={'portfolio'} subtitle={'Web and Mobile development'} />
             <div className={styles.filterContainer}>
                 {
                     filters.map((item, index) => {

@@ -10,10 +10,10 @@ const Home = () => {
                 <div className={styles.content}  >
                     <hr />
                     <h3>
-                        <span className='bold'>WE ARE a DIGITAL</span>
+                        <span className='bold'>I'm a frontend </span>
                     </h3>
-                    <h1 className='heading'>from California</h1>
-                    <Button text={'Our Process'} path={'about'} />
+                    <h1 className='heading'>DEVELOPER</h1>
+                    <Button text={'Process'} path={'about'} />
 
                 </div>
             </div>

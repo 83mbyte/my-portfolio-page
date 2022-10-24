@@ -21,7 +21,7 @@ const Contact = ({ data }) => {
     }
     return (
         <Section scrollId={'contact'}>
-            <HeadingSection title={'Get in Touch'} subtitle={'WE LOVE PRETTY MUCH TO HEAR FROM YOU'} />
+            <HeadingSection title={'Get in Touch'} subtitle={'Provide your questions, comments and advices'} />
             <div className={styles.contactItemsContainer}>
                 <ContactItem icon={'phone'} text={data.phone} />
                 <ContactItem icon={'email'} text={data.email} />
