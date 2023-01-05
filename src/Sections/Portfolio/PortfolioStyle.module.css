@@ -64,6 +64,64 @@
   border: 0px solid red;
 }
 
+/* flip elements */
+.flipContainer {
+  background-color: transparent;
+  width: 300px;
+  height: 200px;
+  margin: 5px;
+  border: 2px solid #fff;
+  perspective: 1000px;
+}
+.flipBody {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+.flipBack,
+.flipFront {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+
+  z-index: 2;
+}
+.flipFront {
+  background-color: #bbb;
+  color: black;
+}
+.flipFront img {
+  width: 100%;
+  height: 100%;
+}
+.flipBack {
+  background-color: #555;
+  color: white;
+  transform: rotateY(180deg);
+}
+.flipBack a:hover {
+  color: #ffd321;
+  text-decoration: underline;
+}
+
+.flipContainer:hover .flipBody {
+  transform: rotateY(180deg);
+  border: 2px solid #ffd321;
+}
+/* ---- */
+
 @media (max-width: 600px) {
   .projectsContainer {
     flex-direction: column;

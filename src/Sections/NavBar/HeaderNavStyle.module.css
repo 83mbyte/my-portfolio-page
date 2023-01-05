@@ -25,14 +25,14 @@
   color: #303030;
   font-size: 30px;
   line-height: 20px;
-  transition: all 0.5s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .navyContainer {
   background-color: transparent;
   padding: 0;
   display: flex;
-  height: auto;
+  height: 49px;
   align-items: center;
 }
 
@@ -82,8 +82,9 @@
 .burgerMenu {
   border: 0px solid red;
   width: 32px;
+
   height: 32px;
-  display: none;
+  display: block;
   align-items: center;
   justify-content: center;
   cursor: pointer;
@@ -93,6 +94,8 @@
   width: 24px;
   height: 24px;
   background-color: #ffd321;
+  opacity: 0;
+  transition: opacity 0s ease 0s;
 }
 .burgerIcon {
   composes: icon;
@@ -102,12 +105,22 @@
 @media (max-width: 760px) {
   .brand {
     font-size: 24px;
+    line-height: 14px;
     padding: 0 0 0 15px;
   }
   .navyContainer .nav {
-    display: none;
+    opacity: 0;
+    transition: opacity 0.1s ease 0s;
   }
-  .burgerMenu {
-    display: flex;
+  .icon {
+    padding: 10px 0;
+    opacity: 1;
+    transition: opacity 0.4s ease 0.4s;
+  }
+}
+
+@media (max-width: 720px) {
+  .navyContainer .nav {
+    display: none;
   }
 }

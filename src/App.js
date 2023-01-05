@@ -26,7 +26,6 @@ const fetchData = async (url) => {
 
 function App() {
 
-
   const serviceURL = 'https://mbyte-af299-default-rtdb.europe-west1.firebasedatabase.app/service.json';
   const baseURL = 'https://mbyte-af299-default-rtdb.europe-west1.firebasedatabase.app/.json';
   const [stateData, setStateData] = useState(null);
@@ -61,7 +60,7 @@ function App() {
         <main>
           <Home />
           <Wrapper>
-            <AboutUs data={stateData.service.sections.about} />
+            <AboutUs data={stateData.service.sections.about} focus={stateData.portfolio.projects} />
           </Wrapper>
           <Wrapper bgColor={'#f9f9f9'}>
             <Portfolio data={stateData.portfolio} />
